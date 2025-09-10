@@ -245,7 +245,7 @@ RUN apt-get -y update && \
 
 WORKDIR /
 #COPY extra_scripts .
-RUN git clone --recursive https://github.com/IntelLabs/Open-Omics-Acceleration-Framework.git -b dev2
+RUN git clone --recursive https://github.com/IntelLabs/Open-Omics-Acceleration-Framework.git
 WORKDIR /Open-Omics-Acceleration-Framework/pipelines/deepvariant-based-germline-variant-calling-fq2vcf/
 
 RUN apt-get update
